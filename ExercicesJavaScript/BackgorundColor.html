@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackgroundColor</title>
+</head>
+<body>
+
+    <!-- Entrada de dados -->
+     <input type="text" id="campoCor" placeholder="Digite uma cor e aperte enter">
+
+     <script>
+
+        const input = document.getElementById("campoCor"); // Capta a entrada de dados do usuário 
+
+        //Escutar a tecla "Enter" pressionada
+        input.addEventListener("keydown", function(event) {
+            if (event.key === "Enter") { // Verifica se a tecla pressionada é "Enter"
+                const cor = input.value; // Captura o valor digitado pelo usuário
+                document.body.style.backgroundColor = cor; // Altera a cor de fundo da página
+            }
+        });
+
+     </script>
+</body>
+</html>

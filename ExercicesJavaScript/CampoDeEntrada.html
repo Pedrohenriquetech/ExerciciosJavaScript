@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibição de Texto</title>
+</head>
+<body>
+
+    <!-- Onde o usuário digitará algo -->
+    <input type="text" id="meuInput" placeholder="Digite algo aqui...">
+
+    <!-- Parágrafo onde o texto será exibido -->
+    <p id="meuParagrafo"></p>
+
+    <script>
+        
+        function mostrarTexto() { 
+        const texto = document.getElementById("meuInput").value; // Ira pegar tudo que o usuário digitou no campo de texto
+
+        document.getElementById("meuParagrafo").textContent = texto; // Ira mostrar o que o usuário digitou no parágrafo
+        }
+
+    </script>
+</body>
+</html>

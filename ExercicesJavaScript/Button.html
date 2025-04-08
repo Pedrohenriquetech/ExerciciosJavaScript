@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Button</title>
+</head>
+<body>
+
+    <script>
+
+        //document.createElement(""); irá criar um elemento!
+        //variavel.textContent = ""; irá add um texto ao elemento criado!
+        const botao = document.createElement("button");
+        botao.textContent = "Mudar a Cor";
+
+        //document.body.appendChild(""); irá add um elemento ao corpo da página!
+        document.body.appendChild(botao);
+
+        //document.addEventListener(""); irá add um evento, nesse caso o click do botão!
+        //document.body.style.backgroundColor(""); irá add um fundo a página!
+        document.addEventListener("click", function() {
+        document.body.style.backgroundColor = "lightblue";
+        });
+
+
+    </script>
+
+</body>
+</html>

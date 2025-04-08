@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+</head>
+<body>
+
+    <!-- Botões e valor do contador -->
+    <button onclick="diminuir()">-</button>
+    <span id="contador">0</span>
+    <button onclick="aumentar()">+</button>
+
+<script>
+
+    let valor = 0 ; //valor inicial do contador
+
+    function aumentar() { 
+    valor++; //valor do contador aumenta 1
+    document.getElementById("contador").textContent = valor; //atualiza o valor exibido
+    }
+
+    function diminuir() {
+    valor--; //valor do contador diminui 1
+    document.getElementById("contador").textContent = valor; //atualiza o valor exibido
+    }
+    
+</script>
+
+</body>
+</html>
